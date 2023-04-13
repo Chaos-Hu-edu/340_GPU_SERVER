@@ -12,9 +12,9 @@
 
 [lxd官方文档](https://linuxcontainers.org/lxd/docs/master/)
 
-## [用户手册]()
+## [用户手册](https://github.com/Chaos-Hu-edu/340_GPU_SERVER/blob/main/lxd容器使用说明/普通用户使用.md)
 
-## [管理员手册]()
+## [管理员手册](https://github.com/Chaos-Hu-edu/340_GPU_SERVER/blob/main/lxd容器使用说明/管理员.md)
 
 ## 1. 第一步：宿主机的安装与配置
 
