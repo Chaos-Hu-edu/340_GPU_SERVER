@@ -1,10 +1,20 @@
 # 340实验室GPU服务器的LXD虚拟化
 
-## 用户手册
+实验室有了很多台服务器，因为实验人数比较多，为了减轻配置服务器的负担，且防止小白会运行损害系统的命令
 
-## 管理员手册
+![image](E:\desktop\github\340_GPU_SERVER\img\img1.gif)
 
+所以使用lxd做了虚拟化。
 
+参考链接：
+
+[实验室GPU服务器的LXD虚拟化](https://github.com/a15720934530/LXD_GPU_SERVER)
+
+[lxd官方文档](https://linuxcontainers.org/lxd/docs/master/)
+
+## [用户手册]()
+
+## [管理员手册]()
 
 ## 1. 第一步：宿主机的安装与配置
 
@@ -12,9 +22,17 @@
 
 安装Ubuntu系统
 
+最好安装 ubuntu 18.04版本
+
+并且把自动更新关闭
+
 ### 1.2. 服务器显卡驱动的安装
 
 尽量安装最新的驱动
+
+[显卡驱动安装](https://medium.com/@cjanze/how-to-install-tensorflow-with-gpu-support-on-ubuntu-18-04-lts-with-cuda-10-nvidia-gpu-312a693744b5)
+
+30系显卡智能安装cuda11以上的驱动，不需要安装CUDA，cuDNN，可以直接通过[pytorch官网](https://pytorch.org/)进行安装对于版本的CUDA和cuDNN
 
 ## 2. 第二步：LXD的安装与初始化
 
@@ -69,8 +87,6 @@ bridge-utils用于搭建网桥
 #### 2.4.1. 再次配置
 
 `sudo lxc profile edit default`
-
-#### 2.4.2. 修改容器内默认磁盘大小
 
 ## 3. 第三步：容器的创建
 
@@ -271,7 +287,7 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
 
 一般使用以下的配置即可满足
 
-
+![my-logo.png](E:\desktop\github\340_GPU_SERVER\img\img2.gif)
 
 配置默认容器参数
 
@@ -307,7 +323,7 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
 
 在config中添加
 
-
+![my-logo.png](E:\desktop\github\340_GPU_SERVER\img\img3.gif)
 
 然后容器重启
 
@@ -331,14 +347,6 @@ path1为宿主机路径，path2为容器内路径
 
 
 
-
-
-
-
-![my-logo.png](https://github.com/a15720934530/LXD_GPU_SERVER/raw/master/image/%E5%9B%BE%E7%89%874.png)
-
-
-
  
 
 
@@ -351,4 +359,3 @@ path1为宿主机路径，path2为容器内路径
 
 
 
-![image-20230411195908150](E:\desktop\image-20230411195908150.png)
