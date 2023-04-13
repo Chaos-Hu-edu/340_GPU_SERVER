@@ -2,7 +2,7 @@
 
 实验室有了很多台服务器，因为实验人数比较多，为了减轻配置服务器的负担，且防止小白会运行损害系统的命令
 
-![image](E:\desktop\github\340_GPU_SERVER\img\img1.gif)
+![image](https://github.com/Chaos-Hu-edu/340_GPU_SERVER/blob/main/img/img1.gif)
 
 所以使用lxd做了虚拟化。
 
@@ -287,7 +287,7 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
 
 一般使用以下的配置即可满足
 
-![my-logo.png](E:\desktop\github\340_GPU_SERVER\img\img2.gif)
+![my-logo.png](https://github.com/Chaos-Hu-edu/340_GPU_SERVER/blob/main/img/img2.gif)
 
 配置默认容器参数
 
@@ -323,7 +323,7 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
 
 在config中添加
 
-![my-logo.png](E:\desktop\github\340_GPU_SERVER\img\img3.gif)
+![my-logo.png](https://github.com/Chaos-Hu-edu/340_GPU_SERVER/blob/main/img/img3.gif)
 
 然后容器重启
 
