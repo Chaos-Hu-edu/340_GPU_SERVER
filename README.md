@@ -303,13 +303,26 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
 
 将容器保存为ubuntudemo镜像
 
-`sudo lxc publish 容器名字 --alias ubuntudemo --description user101demo --public`
+`sudo lxc publish 容器名字 --alias ubuntudemo --public`
+
+修改镜像的描述
+
+`lxc image edit <image_ID>`
+
+```python
+properties:
+  description: xxx
+  os: Ubuntu
+  release: 18.4
+```
 
 从模板镜像中新建容器，容器创建好后修改它的配置文件：添加端口映射（远程连接与SSH）、添加显卡（显卡驱动已经有了）、配置硬件参数
 
 `sudo lxc image list`
 
-`sudo lxc launch FINGERPRINT name`
+`sudo lxc launch FINGERPRINT name --target=location`
+
+ 
 
 
 
